@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    Author: Eric Miller
+    Date: 11/12/2023
+    Assignment: Exam 3
+    Filename: reservations.html
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="index.html">Railroad Historical Museum of Springfield Missouri</a>
+            </div>
+            <div>
+                <a href="index.html">HOME</a>
+                <a href="reservations.html">RESERVATIONS</a>
+                <a href="schedule.html">SCHEDULE</a>
+                <a href="tours.html">TOURS</a>
+            </div>
+        </nav>
+    </header>
+    <div class="formbox">
+        <h2>Reserve Your Visit Today!</h2>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>
+                    Contact Person
+                </legend>
+                <label for="firstname">
+                    First Name:
+                    <input autofocus type="text" id="firstname" name="firstname" required placeholder="First Name">
+                </label>
+                <label for="lastname">
+                    Last Name:
+                    <input type="text" id="lastname" name="lastname" required placeholder="Last Name">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Reservation Options
+                </legend>
+                <label for="groupsize">
+                    Group Size
+                    <select name="groupsize" id="groupsize">
+                        <option value="1-2">1-2</option>
+                        <option value="3-6">3-6</option>
+                        <option value="6-10">6-10</option>
+                        <option value="11plus">11 or More</option>
+                    </select>
+                </label>
+                <label for="guidedtour">
+                    Guided Tour
+                    <input type="radio" id="guidedtour" name="tour" value="guidedtour">
+                </label>
+                <label for="noguide">
+                    No Guide Needed
+                    <input type="radio" id="noguide" name="tour" value="noguide">
+                </label>
+            </fieldset>
+            <input type="submit" class="submit" value="Submit">
+        </form>
+    </div>
+    <footer>
+        <p>COPYRIGHT &copy; 2023 ERIC MILLER</p>
+    </footer>
+</body>
+
+</html>

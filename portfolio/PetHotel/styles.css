@@ -1,0 +1,185 @@
+/* 
+Author: Eric Miller
+Date: 10/15/2023
+Assignment: Exam 2
+Filename: styles.css
+*/
+
+/* General Styles */
+
+html {
+    background-image: url("images/pawsTile.png");
+    background-repeat: repeat;
+}
+
+body {
+    width: 85%;
+    margin: auto;
+    background-color: white;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.logo {
+    Height: 100px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+#navigation-container {
+    position: relative;
+    background-color: #5E99C3;
+    ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-inline-start: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: .9em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 5px 5px 5px black;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer {
+    background-color: #5E99C3;
+    color: white;
+
+    border-top: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 5px 5px 5px black;
+    font-weight: bold;
+    padding: 5px;
+    clear: both;
+}
+
+.col_conatiner:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.bigimage {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+
+/* Demo of floating image */
+.imagefloat {
+    float: left;
+}
+
+/* Contact Us Flexbox Stuff */
+.contactUsFlex {
+    display: flex;
+}
+
+.hoursFlex {
+    flex-basis: 200px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/* Media Queries */
+
+/* MOBILE (Up to 480px) */
+@media only screen and (max-width: 480px) {
+    .first_col {
+        width: 95%;
+        float: left;
+        padding-right: 2%;
+    }
+
+    .second_col {
+        width: 95%;
+        float: left;
+        padding-right: 2%;
+    }
+
+    .third_col {
+        width: 95%;
+        float: left;
+        padding-right: 2%;
+    }
+
+    a {
+        padding: 2px;
+    }
+
+    .bigimage {
+        display: none;
+    }
+
+    .imagefloat {
+        display: none;
+    }
+
+}
+
+/* TABLET (481 and up) */
+@media only screen and (min-width: 481px) {
+    .first_col {
+        width: 45%;
+        float: left;
+        padding-right: 2%;
+    }
+
+    .second_col {
+        width: 45%;
+        float: left;
+        padding-right: 2%;
+    }
+
+    .third_col {
+        width: 100%;
+        float: left;
+        padding-right: 2%;
+    }
+
+
+}
+
+
+/* DESKTOP (998 and up) */
+@media only screen and (min-width: 998px) {
+
+    .first_col {
+        width: 30%;
+        float: left;
+        padding-right: 2%;
+    }
+
+    .second_col {
+        width: 30%;
+        float: left;
+        padding-right: 2%;
+    }
+
+    .third_col {
+        width: 30%;
+        float: left;
+        padding-right: 2%;
+    }
+
+}

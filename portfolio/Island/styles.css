@@ -1,0 +1,103 @@
+/* 
+Author: Eric Miller
+Date: 9/16/23
+Assignment: Exam 1
+Filename: styles.css
+*/
+
+/* Browser Reset Styles */
+p,
+html,
+h1,
+body {
+    margin: 0px;
+}
+
+/*Structural Styles */
+body {
+    background-color: black;
+    color: black;
+}
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #266;
+    text-align: center;
+}
+
+div {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+h2 {
+    font-size: 0.85em;
+}
+
+p {
+    text-align: left;
+    line-height: 25px;
+}
+
+/*Header Rules */
+header {
+    border-bottom: 2px double black;
+    box-shadow: 0px 3px 5px;
+}
+
+h1 {
+    font-family: 'Mooli', serif;
+}
+
+/* Navigation Styles */
+nav {
+    text-align: center;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited,
+a:link {
+    color: #033;
+}
+
+a:hover {
+    background-color: #699;
+}
+
+/*Section Styles */
+section {
+    padding-top: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    border-top: 1px solid black;
+    background-color: #0D4D4D;
+    text-align: left;
+}
+
+.even {
+    color: #669999;
+}
+
+.odd {
+    background-color: #669999;
+}
+
+/*Footer Styles*/
+footer {
+    font-weight: bold;
+    background-color: #669999;
+    border-top: 1px double black;
+    border-bottom: 1px double black;
+    margin-top: 15px;
+}
+
+footer p {
+    text-align: center;
+}

@@ -1,0 +1,142 @@
+/*
+Author: Eric Miller
+Date: 11/12/2023
+Assignment: Exam 3
+Filename: styles.css
+*/
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: black;
+    position: relative;
+    top: 0px;
+    border-bottom: 8px solid #9bc400;
+    margin: 0px;
+    padding-top: 18px;
+    padding-bottom: 15px;
+    height: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between
+}
+
+nav a {
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+    margin: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #9bc400;
+    text-shadow: 3px 3px 10px #9bc400;
+}
+
+footer {
+    background-color: black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    border-top: 8px solid #9bc400;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+.secondp {
+    padding-bottom: 45px;
+}
+
+img {
+    border-radius: 25px;
+    margin: 10px;
+}
+
+img:hover {
+    box-shadow: 5px 5px 10px grey;
+
+}
+
+
+iframe:hover {
+    box-shadow: 5px 5px 10px grey;
+    box-shadow: -5px 0px 10px grey;
+}
+
+.formbox {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    background: lightgrey;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+table {
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 1.5em;
+    background-color: #9bc400;
+    border-collapse: collapse;
+    box-shadow: 5px 5px 10px grey;
+    font-family: sans-serif;
+}
+
+td,
+th {
+    border: 3px solid black;
+}
+
+thead {
+    font-size: 1.1em;
+}
+
+.gridbox {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:repeat(2,1fr);
+}
+
+.img1 {
+   max-width: 80%;
+}
+
+iframe {
+    max-width:80%;
+}
+
+@media screen and (max-width: 918px)
+{
+    .gridbox {
+        grid-template-columns:repeat(1,1fr);
+    }
+    
+    .img1 {
+        max-width: 90%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    header {
+        height: 20px;
+        text-align: center;
+    }
+
+    
+}

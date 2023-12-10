@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    Author: Eric Miller
+    Date: 11/1/2023
+    Assignment: Registration Form
+    Filename: index.html
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advising Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h2>Advising Appointment</h2>
+    <div class="container">
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>
+                    Contact Information
+                </legend>
+                <label for="fname">
+                    First Name:
+                    <input autofocus type="text" id="fname" name="fname" required placeholder="First Name">
+                </label>
+                <label for="lname">
+                    Last Name:
+                    <input type="text" name="lname" id="lname" required placeholder="Last Name">
+                </label>
+                <label for="email">
+                    Email:
+                    <input type="email" name="email" id="email" required placeholder="Email">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Appointment Date/Time
+                </legend>
+                <label for="month">
+                    Month
+                    <select name="month" id="month">
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                    </select>
+                </label>
+                <label for="date">
+                    Day of the Month
+                    <input type="number" id="date" name="date" min="1" max="31">
+                </label>
+                <div class="radiobuttons">
+                    <label for="AM" id="amlabel">
+                        AM
+                        <input type="radio" id="AM" name="ampm" value="AM">
+                    </label>
+                    <label for="PM">
+                        PM
+                        <input type="radio" id="PM" name="ampm" value="PM">
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Class Information
+                </legend>
+                <label for="teacher">
+                    Teacher:
+                    <select name="teacher" id="teacher">
+                        <option value="Tiffany Ford">Tiffany Ford</option>
+                        <option value="Kirsten Markley">Kirsten Markley</option>
+                        <option value="Jackson Lewis">Jackson Lewis</option>
+                    </select>
+                </label>
+                <label for="CIS101">
+                    CIS-101
+                    <input type="radio" id="CIS101" name="CIS101" value="CIS101">
+                </label>
+                <label for="CIS120">
+                    CIS-120
+                    <input type="radio" id="CIS120" name="CIS120" value="CIS120">
+                </label>
+                <label for="CIS130">
+                    CIS-130
+                    <input type="radio" id="CIS130" name="CIS130" value="CIS130">
+                </label>
+                <label for="CIS131">
+                    CIS-131
+                    <input type="radio" id="CIS131" name="CIS131" value="CIS131">
+                </label>
+                <label for="CIS150">
+                    CIS-150
+                    <input type="radio" id="CIS150" name="CIS150" value="CIS150">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Extra Information
+                </legend>
+                <textarea name="extrainformation" id="extrainformation" cols="50" rows="5" placeholder="Extra Information..."></textarea>
+            </fieldset>
+
+
+            <input class="submit" type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>

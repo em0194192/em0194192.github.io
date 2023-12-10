@@ -1,0 +1,138 @@
+/*
+Author: Eric Miller
+Date: 12/9/2023
+Assignment: Final Project
+Filename: styles.css
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(images/DSC_8108.jpg);
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    background-color: rgba(255, 00, 00, .1);
+    width: 100%;
+    height: 2.5em;
+}
+
+nav a {
+    text-decoration: none;
+    color: aliceblue;
+    padding-top: 11px;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    text-shadow: 2px 2px 3px white;
+}
+
+.introbox {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    width: 70%;
+    text-align: center;
+    background-color: rgba(255, 00, 00, .01);
+
+    margin-top: 10%;
+    border-radius: 40px;
+    color: aliceblue;
+    backdrop-filter: blur(5px);
+}
+
+h1 {
+    font-size: 4em;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+p {
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+button {
+    border-radius: 64px;
+    margin: 8px 8px;
+    height: 65px;
+    width: 145px;
+    background-color: rgba(255, 00, 00, .01);
+    border: 2px solid white;
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+
+button:hover {
+    background-color: rgba(255, 00, 00, .1);
+}
+
+i {
+    padding-left: 30px;
+}
+
+.fa-brands {
+    color: white;
+}
+
+#lilink,
+#clink {
+    color: aqua;
+}
+
+.contactform {
+    font-size: 1.5em;
+}
+
+label {
+    display: block;
+    padding-bottom: 10px;
+}
+
+fieldset {
+    width: 30%;
+    margin: auto;
+}
+
+.submit {
+    padding: 5px;
+    margin: 15px;
+}
+
+.contacth1 {
+    margin-bottom: 5px;
+}
+
+h2 {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-gap: 75px 75px;
+}
+
+img {
+    width: 100%;
+}
+
+@media(max-width: 1630px) {
+    .grid {
+        grid-template-columns: repeat(2, 400px);
+    }
+}
+
+@media(max-width: 1075px) {
+    .grid {
+        grid-template-columns: repeat(1, 400px);
+    }
+}

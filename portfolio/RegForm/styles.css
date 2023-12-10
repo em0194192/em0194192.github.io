@@ -1,0 +1,39 @@
+/*
+Author: Eric Miller
+Date: 11/1/2023
+Assignment: Registration Form
+Filename: styles.css
+*/
+
+body {
+    background-image: url(otcbackground.jpg);
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+    background-color: #eeeeee;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+input {
+    position: absolute;
+    left: 11%;
+    width: 75%;
+}
+
+.submit {
+    width: initial;
+    position: initial;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    Author: Eric Miller
+    Date: 12/9/2023
+    Assignment: Final Project
+    Filename: contact.html
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Eric Miller</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="introbox">
+        <h1 class="contacth1">CONTACT ME</h1>
+        <h2>NOTE: This form is for demonstration purposes only. Please reach out on LinkedIn.</h2>
+        <form class="contactform" method="get" action="thankyou.html">
+            <fieldset>
+                <legend>
+                    Contact Information
+                </legend>
+                <label for="fname">
+                    First Name:
+                    <input autofocus type="text" id="fname" name="fname" required placeholder="First Name">
+                </label>
+                <label for="lname">
+                    Last Name:
+                    <input type="text" name="lname" id="lname" required placeholder="Last Name">
+                </label>
+                <label for="email">
+                    Email:
+                    <input type="email" name="email" id="email" required placeholder="Email">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Details
+                </legend>
+                <textarea name="extrainformation" id="extrainformation" cols="50" rows="5"
+                    placeholder="Extra Information..."></textarea>
+            </fieldset>
+            <input class="submit" type="submit" value="Submit">
+        </form>
+
+    </div>
+</body>
+
+</html>
